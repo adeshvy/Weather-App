@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #222;
+}
+.card {
+  /* border: 1px solid white; */
+
+  width: 90%;
+  max-width: 480px;
+  max-height: 400px;
+
+  
+/* * Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=125ad7&c2=8e04fa&gt=l&gd=dbr */ 
+
+background: #125AD7;
+background: linear-gradient(315deg, #125AD7, #8E04FA);
+  color: #fff;
+  margin: 0 auto 0;
+  border-radius: 20px;
+  padding: 30px 35px;
+  text-align: center;
+}
+
+.search {
+  /* border: 1px solid red; */
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input {
+  /* border: 1px solid black; */
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 25px;
+  height: 40px;
+  border-radius: 30px;
+  flex: 1;
+  min-width: 170px;
+  margin-right: 16px;
+  font-size: 18px;
+}
+.search button {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  border-radius: 50%;
+  min-width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.search button img {
+  width: 16px;
+}
+.weathericon {
+  /* border: 1px solid  black; */
+
+  width: 144px;
+  margin-top: 5px;
+  }
+.weather h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+.weather h2 {
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: -5px;
+}
+.details {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+.col {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.col img {
+  /* border: 1px solid red; */
+  width: 50px;
+  margin-right: 10px;
+  margin-top: -30px;
+}
+.humidity,
+.wind {
+  /* border: 1px solid red; */
+  font-size: 28px;
+  margin-top: -30px;
+}
+
+
+@media (max-width: 480px) {
+  .col img {
+    /* border: 1px solid red; */
+
+    width: 40px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .col {
+    /* border: 1px solid black; */
+
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .humidity,
+  .wind {
+    /* border: 1px solid red; */
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .card {
+    max-height: none;
+  }
+  .details {
+    /* border: 1px solid black; */
+    /* padding-left: 70px; */
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .details p {
+    font-size: 15px;
+  }
+}
+.weather{
+  display: none;
+}
